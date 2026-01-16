@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Builder (Website)</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        header { background: #007bff; color: white; padding: 10px; text-align: center; }
+        .container { display: flex; gap: 20px; max-width: 1400px; margin: auto; }
+        .panel { background: #e9ecef; padding: 20px; border: 2px dashed #007bff; flex: 1; }
+        .phone { width: 300px; height: 600px; border: 20px solid #333; border-radius: 40px; margin: auto; background: white; position: relative; overflow: hidden; }
+        .phone-content { padding: 40px 20px; height: 100%; box-sizing: border-box; }
+        .form { display: flex; flex-direction: column; gap: 10px; }
+        input, button { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #007bff; color: white; cursor: pointer; }
+        .section { background: white; margin: 10px 0; padding: 15px; border-left: 4px solid #007bff; }
+        @media (max-width: 768px) { .container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>Wireframe Builder (Website)</header>
+    <div class="container">
+        <!-- Left Panel: Landing Page 1 -->
+        <div class="panel">
+            <h3>Landing Page 1</h3>
+            <div class="phone">
+                <div class="phone-content">
+                    <h4>Create Account</h4>
+                    <form class="form">
+                        <input placeholder="Name" type="text">
+                        <input placeholder="Email" type="email">
+                        <input placeholder="Password" type="password">
+                        <button>Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Center: Landing Page 2 -->
+        <div class="panel" style="flex: 2;">
+            <h3>Landing Page 2</h3>
+            <div class="phone">
+                <div class="phone-content">
+                    <h4>New Collection</h4>
+                    <input style="width: 100%; padding: 10px; margin-bottom: 10px;" placeholder="Collection Name">
+                    <div style="text-align: center;">
+                        <div style="width: 100px; height: 100px; background: #ddd; margin: auto; display: flex; align-items: center; justify-content: center;">📱</div>
+                    </div>
+                    <button style="width: 100%; margin-top: 10px;">Upload</button>
+                </div>
+            </div>
+        </div>
+        <!-- Right Panel: Sections -->
+        <div class="panel">
+            <h3>Sections</h3>
+            <div class="section">
+                <h4>About</h4>
+                <p>Details about the app...</p>
+                <div style="width: 60px; height: 60px; background: #ddd; margin: 10px 0;">👤</div>
+            </div>
+            <div class="section">
+                <h4>Section 2</h4>
+                <div style="display: flex; gap: 10px;">
+                    <div style="flex: 1; height: 80px; background: #ddd;">📊</div>
+                    <div style="width: 60px; height: 60px; background: #ddd;">🛡</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Basic interactivity: Arrow connections simulation
+        console.log('Wireframe loaded. Add drag-drop with JS libraries like Interact.js for full builder.');
+    </script>
+</body>
+</html>
